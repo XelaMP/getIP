@@ -8,6 +8,8 @@ import (
 	"strings"
 )
 
+const defaultPort = "8080"
+
 func newConfiguration() (model.Configuration, error) {
 	// we ignore the error because it can take the system environments
 	_ = godotenv.Load()
